@@ -1,4 +1,4 @@
-#Link to the problem : https://codeforces.com/contest/2014/problem/C
+#Link of the problem : https://codeforces.com/contest/2014/problem/C
 for _ in range(int(input())):
     n = int(input())
     arr = list(map(int,input().split()))
