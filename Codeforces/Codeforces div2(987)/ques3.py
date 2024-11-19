@@ -1,6 +1,6 @@
 #Link to the problem : https://codeforces.com/problemset/problem/2031/C
-
-for _ in range(int(input())):
+t = int(input())
+for _ in range(t):
     n = int(input())
     
     if n % 2 == 0:
