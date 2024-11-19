@@ -1,5 +1,4 @@
 """#How to Find the element which have the maximum occurence in the array
-
 from collections import Counter
 arr =[1,1,22,2,2,2,4,5,6,7,999,9,99,9,9,9,99,2,2]
 freq_map = Counter(arr)
