@@ -1,4 +1,4 @@
-#Link to the problem : https://codeforces.com/contest/2014/problem/B
+#Link of the problem : https://codeforces.com/contest/2014/problem/B
 
 for _ in range(int(input())):
     n,k = map(int,input().split())
