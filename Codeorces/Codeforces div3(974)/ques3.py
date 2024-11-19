@@ -1,4 +1,3 @@
-# This Python code is solving a problem from Codeforces contest 2014, specifically problem C. Here's a
 #Link to the problem : https://codeforces.com/contest/2014/problem/C
 for _ in range(int(input())):
     n = int(input())
