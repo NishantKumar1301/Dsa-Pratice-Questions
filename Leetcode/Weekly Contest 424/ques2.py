@@ -24,3 +24,7 @@ class Solution(object):
         for i in range(n):
             if sweep_line[i]<nums[i]:
                 return False
+        
+        #Else return True
+        
+        return True
