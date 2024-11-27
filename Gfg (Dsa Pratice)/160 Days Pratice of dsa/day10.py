@@ -7,7 +7,7 @@ class Solution:
     def maxSubArraySum(self,arr):
         ##Your code here
         max_sum=float("-inf")
-        left=right=curr_sum =0
+        right=curr_sum =0
         n = len(arr)
         while(right<n):
             curr_sum+=arr[right]
@@ -15,7 +15,6 @@ class Solution:
             max_sum = max(max_sum,curr_sum)
 
             if curr_sum<0:
-                left = right+1
                 curr_sum =0
             
             # max_sum = max(max_sum,curr_sum)
