@@ -2,7 +2,7 @@
 #Link to the question: https://leetcode.com/problems/filling-bookcase-shelves/description/
 
 class Solution:
-    def minHeightShelves(self, books: List[List[int]], shelfWidth: int) -> int:
+    def minHeightShelves(self, books, shelfWidth: int) -> int:
         n = len(books)
         dp = [float('inf')] * (n + 1)
         dp[0] = 0  # No books means zero height

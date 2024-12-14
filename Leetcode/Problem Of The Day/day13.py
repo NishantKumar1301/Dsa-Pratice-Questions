@@ -3,7 +3,7 @@
 
 from heapq import heappush ,heappop
 class Solution:
-    def findScore(self, nums: List[int]) -> int:
+    def findScore(self, nums) -> int:
         pq =[]
         for index,value in enumerate(nums):
             heappush(pq,(value,index))
