@@ -2,21 +2,16 @@
 #Link to the question: https://www.codechef.com/START165B/problems/BDISC
 
 # cook your dish here
-import heapq
+from heapq import heapify, heappop
 
 for _ in range(int(input())):
     n = int(input())
     arr = list(map(int, input().split()))
-
-    heapq.heapify(arr) 
+    heapify(arr)
     ans = 0
-    dis = 0
-    
+    discount = 0
     while arr:
-        cost = heapq.heappop(arr)
-        ans += max(0, cost - dis)
-        dis += 1
-    
+        cost = heappop(arr)
+        ans+=max(cost-discount,0)
+        discount+=1
     print(ans)
-
-
