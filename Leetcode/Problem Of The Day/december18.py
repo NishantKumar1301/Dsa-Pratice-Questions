@@ -5,14 +5,9 @@ from collections import Counter
 from heapq import heappush , heappop
 class Solution(object):
     def repeatLimitedString(self, s, repeatLimit):
-        """
-        :type s: str
-        :type repeatLimit: int
-        :rtype: str
-        """
         #Step1 : Find the count of every character of the string
         freq = Counter(s)
-        pq =[] #In python min heap is initiallised for using it as a max heap we will multiply by -1
+        pq =[] #In python min heap is initialised for using it as a max heap we will multiply by -1
         for char , count in freq.items():
             heappush(pq,(-ord(char),count)) #Use -ord(char) for acting the heap as a max heap
         
