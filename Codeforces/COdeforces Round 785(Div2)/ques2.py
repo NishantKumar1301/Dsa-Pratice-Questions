@@ -18,7 +18,7 @@ def check(s):
             curr = i 
             diff = curr -previous_occurence
             if diff != unique:
-                flag=True
+                flag=True  
                 break
             
         mp[s[i]]=i
