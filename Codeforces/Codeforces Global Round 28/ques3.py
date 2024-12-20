@@ -14,7 +14,7 @@ for _ in range(int(input())):
     #Count the number of consecutive zeroes 
     count =0
     if index!=-1:
-        for i in range(n):
+        for i in range(index,n):
             if s[i]=='0':
                 count+=1 
             else:
@@ -30,6 +30,6 @@ for _ in range(int(input())):
         ans =(1,n,1,1)
         # print(f"1 {n} 1 1")
     else:
-        ans =(1,n,max(index-count)+1,n-min(index,count))
+        ans =(1,n,max(index-count,0)+1,n-min(index,count))
         # print(f"1 {n} {max(0,index-count)+1} {n-min(index,count)} ")
     print(*ans)
