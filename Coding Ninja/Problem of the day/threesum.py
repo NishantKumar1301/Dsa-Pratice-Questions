@@ -2,7 +2,7 @@
 #Link to the question: https://www.naukri.com/code360/problems/three-sum_6922132?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems
 
 
-def triplet(n: int, arr: [int]) -> [[int]]:
+def triplet(n: int, arr):
     # Write your code here.
     ans =[]
     arr.sort()

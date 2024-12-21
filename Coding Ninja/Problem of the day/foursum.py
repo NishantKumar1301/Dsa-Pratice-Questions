@@ -1,7 +1,7 @@
 #Question : 4Sum
 #Link to the question: https://www.naukri.com/code360/problems/4sum_5713771?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems&leftPanelTabValue=PROBLEM
 
-def fourSum(nums: [int], target: int) -> [[int]]:
+def fourSum(nums, target: int) :
     # Write your code from here.
     ans =[]
     nums.sort()
