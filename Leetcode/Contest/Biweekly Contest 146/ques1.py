@@ -15,6 +15,5 @@ class Solution(object):
 
         return count
             
-        ©leetcode
 
 
