@@ -16,7 +16,7 @@ def solve():
     ans =False
     for i in range(number_of_2+1): 
         for j in range(number_of_3+1):
-            if (total_sum+2*i+2*j)%9==0:
+            if (total_sum+2*i+6*j)%9==0:
                 ans =True
                 break
         if ans:
