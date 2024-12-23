@@ -12,17 +12,16 @@ def solve():
     n = int(input())
     arr1 = list(map(int, input().split()))
     arr2 = list(map(int, input().split()))
-    ans=0
-    
-    for i in range(n):
-        if i + 1 < n and arr1[i] >= arr2[i + 1]:
-            ans += (arr1[i] - arr2[i + 1])
-        elif i == n - 1:
-            ans += arr1[i]
+
+    ans = arr1[-1]  
+    for i in range(1, n):  
+        if arr1[i-1] > arr2[i]:  
+            ans += arr1[i-1] - arr2[i]
+
     print(ans)
-    
- 
+
 for _ in range(int(input())):
     solve()
+
  
 """Author : Nishant Kumar"""
