@@ -10,21 +10,17 @@ class Solution(object):
         :rtype: List[int]
         """
         n = len(A)
-        prefix_common_array = [0 for _ in range(n)]
-        frequency = [0 for _ in range(n + 1)]
-        common_count = 0
-
-        for current_index in range(n):
-
-            frequency[A[current_index]] += 1
-            if frequency[A[current_index]] == 2:
-                common_count += 1
-
-            frequency[B[current_index]] += 1
-            if frequency[B[current_index]] == 2:
-                common_count += 1
-
-            prefix_common_array[current_index] = common_count
-
-        return prefix_common_array
+        freq = [0]*(n+1)
+        ans = [0]*n
+        count = 0
+        for i in range(n):
+            freq[A[i]]+=1
+            if freq[A[i]]==2:
+                count +=1
+            freq[B[i]]+=1
+            if freq[B[i]]==2:
+                count+=1
+            ans[i]=count
+        return ans
+        
         
