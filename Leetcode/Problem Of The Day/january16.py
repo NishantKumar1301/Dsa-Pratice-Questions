@@ -17,7 +17,7 @@ class Solution(object):
                 ans = ans^num
         #If len1 == odd then ans is xored with all the element of nums2
         if len1%2==1:
-            for num in nums1:
+            for num in nums2:
                 ans = ans^num
         
         return ans
