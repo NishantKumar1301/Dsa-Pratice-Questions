@@ -69,7 +69,7 @@ def houseRobber(valueInHouse):
     dp = [-1] * (n - 1)  
     case1 = helper(n - 2, valueInHouse[:n - 1], dp)  
     
-    # Case 2: Rob from house 1 to house n-1 (exclude first house)
+    # Case 2: Rob from houses 1 to house n-1 (exclude first house)
     dp = [-1] * (n - 1)  
     case2 = helper(n - 2, valueInHouse[1:], dp) 
     
