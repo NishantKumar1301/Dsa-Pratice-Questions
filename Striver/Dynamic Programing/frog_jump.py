@@ -10,7 +10,6 @@ from typing import *
 
 #Method1 : Using tabulation
 def frogJump(n: int, heights: List[int]) -> int:
-    # Write your code here.
     if n ==0:
         return 0
     dp = [-1]*(n)
