@@ -1,4 +1,4 @@
-#Question :  Count Ways To Reach The N-th Stairs
+#Question :  Count Ways To Reach The N-th Stair
 #Link to the question: https://www.naukri.com/code360/problems/count-ways-to-reach-nth-stairs_798650
 
 from os import *
