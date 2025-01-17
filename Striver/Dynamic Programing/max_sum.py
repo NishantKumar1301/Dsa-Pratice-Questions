@@ -10,7 +10,6 @@ from sys import stdin
 
 #Method 1: using tabulation
 def maximumNonAdjacentSum(nums):    
-    # Write your code here.
     n = len(nums)
     dp = [-1]*n
     dp[0]=nums[0]
