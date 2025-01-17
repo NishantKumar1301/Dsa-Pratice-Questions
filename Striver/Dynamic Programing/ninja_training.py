@@ -31,6 +31,26 @@ class Solution:
         return self.helper(n-1,3,arr,dp)
 
 
+#Method 2 : Using Tabulation 
 
+def ninjaTraining(n: int, points: List[List[int]]) -> int:
+
+    # Write your code here.
+    dp = [[-1 for j in range(4)] for i in range(n)] #SIze of dp =n*4
+    dp[0][0]=max(points[0][1],points[0][2])
+    dp[0][1]=max(points[0][0],points[0][2])
+    dp[0][2]=max(points[0][1],points[0][0])
+    dp[0][3]=max(points[0][0],points[0][1],points[0][2])
+
+    for day in range(1,n): # Total rows = day = n
+        for last in range(4): # Last = 0,1,2,3
+            maxi = 0
+            for task in range(3): #Task = 0,1,2
+                if task!=last:
+                    point = points[day][task]+dp[day-1][task]
+                    maxi = max(maxi,point)
+            dp[day][last]= maxi
+    
+    return dp[n-1][3]
 
 
