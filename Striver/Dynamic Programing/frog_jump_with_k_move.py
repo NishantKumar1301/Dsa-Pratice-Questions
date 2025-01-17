@@ -4,7 +4,6 @@
 class Solution:
     #Method 1 : Using Tabulation
     def minimizeCost(self, k, arr):
-        # code here
         n = len(arr)
         dp = [-1]*n
         dp[0]=0
