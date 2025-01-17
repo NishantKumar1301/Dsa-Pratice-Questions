@@ -1,7 +1,7 @@
 #Question : 2Sum
 #Link to the question:https://www.naukri.com/code360/problems/reading_6845742?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems
 
-def read(n: int, book: [int], target: int) -> str:
+def read(n: int, book, target: int) :
     # Write your code here.
     left = 0
     right = n-1
