@@ -33,7 +33,7 @@ class Solution:
 
 #Method 2 : Using Tabulation 
 
-def ninjaTraining(n: int, points: List[List[int]]) -> int:
+def ninjaTraining(n: int, points) -> int:
 
     # Write your code here.
     dp = [[-1 for j in range(4)] for i in range(n)] #SIze of dp =n*4
