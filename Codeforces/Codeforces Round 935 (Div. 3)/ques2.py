@@ -7,8 +7,6 @@
 # Author: Nishant Kumar
 
 def solve():
-    # n = int(input())
-    # arr = list(map(int, input().split()))
     a,b,m = map(int,input().split())
     # Write your logic here
     ans = (m//a+1)+(m//b+1)
