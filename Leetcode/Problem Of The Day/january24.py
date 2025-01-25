@@ -6,7 +6,7 @@ class Solution:
     def lexicographicallySmallestArray(self, nums, limit):
         n = len(nums)
 
-        vec = sorted(nums)  # Sort the array
+        vec = sorted(nums)  
 
         group_num = 0
         num_to_group = {vec[0]: group_num}
