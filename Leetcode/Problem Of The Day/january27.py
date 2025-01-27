@@ -1,9 +1,20 @@
 #Question : Course Schedule IV
 #Link to the question: https://leetcode.com/problems/course-schedule-iv/description/?envType=daily-question&envId=2025-01-27
 
-# #Method 1 : Using Bfs  : It will work if the number of query is less otherwise it would give tle
+# #Method 1 : Using Bfs & Dfs  : It will work if the number of query is less otherwise it would give tle
 from collections import deque
 class Solution(object):
+    def dfs(self,start,target,adj,visited):
+        if start== target:
+            return True
+        if visited[start]:
+            return False
+        visited[start]=True
+        for neighbor in adj[start]:
+            if self.dfs(neighbor,target,adj,visited):
+                return True
+        return False
+    
     def bfs(self,start,target,adj,visited):
         queue = deque([start])
         while queue:
@@ -25,7 +36,8 @@ class Solution(object):
         for query in queries:
             start , target = query[0],query[1]
             visited = [False]*numCourses
-            ans.append(self.bfs(start,target,adj,visited))
+            # ans.append(self.bfs(start,target,adj,visited))
+            ans.append(self.dfs(start,target,adj,visited))
         return ans 
 
 #Method 2 : Using All pair shortest path (Floyd warshall Algorithm )
