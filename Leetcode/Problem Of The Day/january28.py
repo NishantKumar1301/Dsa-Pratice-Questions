@@ -13,7 +13,7 @@ class Solution(object):
         for i in range(4):
             new_x = x+ dx[i]
             new_y = y+dy[i]
-            if (self.is_valid(new_x,new_y,n,m)) and visited[new_x][new_y] and grid[new_x][new_y]!=0:
+            if (self.is_valid(new_x,new_y,n,m)) and not  visited[new_x][new_y] and grid[new_x][new_y]>0:
                 visited[new_x][new_y]=True
                 ans += self.dfs(grid,visited,new_x,new_y,n,m)
         return ans
@@ -23,7 +23,7 @@ class Solution(object):
         visited = [[False]*m for _ in range(n)]
         for i in range(n):
             for j in range(m):
-                if not visited[i][j] and grid[i][j]!=0:
+                if not visited[i][j] and grid[i][j]>0:
                     visited[i][j]=True
                     ans = max(ans , self.dfs(grid,visited,i,j,n,m))
         return ans
