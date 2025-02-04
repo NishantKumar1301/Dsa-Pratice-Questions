@@ -1,6 +1,6 @@
 #Question :  Power of Points
 #Link to the question: https://codeforces.com/contest/1857/problem/E
-
+ 
 def solve():
     n = int(input())
     arr = list(map(int, input().split()))
@@ -18,8 +18,7 @@ def solve():
         ans[vp[i][1]] = val
     
     print(" ".join(map(str, ans)))
-
-
+ 
+ 
 for _ in range(int(input())):
     solve()
-
