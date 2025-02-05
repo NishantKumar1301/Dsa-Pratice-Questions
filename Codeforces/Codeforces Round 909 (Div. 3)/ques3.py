@@ -1,7 +1,6 @@
 #Question : Yarik and Array
 #Link to the question: https://codeforces.com/contest/1899/problem/C
-
-
+ 
 for _ in range(int(input())):
     n = int(input())
     arr = list(map(int,input().split()))
