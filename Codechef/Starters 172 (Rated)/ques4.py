@@ -1,7 +1,7 @@
 #Question : Transform String
 #Link to the question: https://www.codechef.com/problems/P4_172
 
-# cook your dish here
+# cook your dish here 
 for _ in range(int(input())):
     a = input().strip()
     b = input().strip()
