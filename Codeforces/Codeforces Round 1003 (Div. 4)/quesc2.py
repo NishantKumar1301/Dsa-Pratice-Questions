@@ -1,3 +1,7 @@
+#Question : Skibidus and Fanum Tax (hard version)
+#Link to the question: https://codeforces.com/contest/2065/problem/C2
+
+
 from bisect import bisect_left
 
 def min_element(arr, val):
