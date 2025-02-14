@@ -1,5 +1,5 @@
 #Question : Ambitious Child
-#Link to the question: https://codeforces.com/problemset/problem/1866/A
+#Link to the question : https://codeforces.com/problemset/problem/1866/A
 
 
 def solve():
