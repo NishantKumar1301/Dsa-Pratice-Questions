@@ -1,7 +1,5 @@
 #Question : Forked
 #Link to the question: https://codeforces.com/problemset/problem/1904/A
-
-
 dx = [-1, 1, -1, 1]
 dy = [-1, -1, 1, 1]
 
