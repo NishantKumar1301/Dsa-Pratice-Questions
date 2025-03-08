@@ -4,8 +4,6 @@
 import math
 
 
-# print(a)
-
 for _ in range(int(input())):
     n = int(input())
     i = 1
