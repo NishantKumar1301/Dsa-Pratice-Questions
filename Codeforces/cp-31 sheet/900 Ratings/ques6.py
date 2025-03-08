@@ -3,9 +3,7 @@
 
 import math
 
-# a = 1
-# for i in range(2, 51):
-#     a = math.lcm(a, i)
+
 # print(a)
 
 for _ in range(int(input())):
