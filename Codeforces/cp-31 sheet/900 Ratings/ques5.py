@@ -1,7 +1,5 @@
 #Question : Chemistry
 #Link to the question: https://codeforces.com/problemset/problem/1883/B
-
-
 for _ in range(int(input())):
     n, k = map(int, input().split())
     s = input()
