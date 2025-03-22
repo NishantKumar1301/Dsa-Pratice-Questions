@@ -5,7 +5,7 @@ from collections import defaultdict
 class Solution:
     def countCompleteComponents(self, n, edges):
         graph = [[] for _ in range(n)]
-        component_freq = defaultdict(int)
+        freq = defaultdict(int)
 
         for vertex in range(n):
             graph[vertex] = [vertex]
@@ -16,11 +16,11 @@ class Solution:
 
         for vertex in range(n):
             neighbors = tuple(sorted(graph[vertex]))
-            component_freq[neighbors] += 1
+            freq[neighbors] += 1
 
         return sum(
             1
-            for neighbors, freq in component_freq.items()
+            for neighbors, freq in freq.items()
             if len(neighbors) == freq
         )
 
