@@ -4,7 +4,7 @@
 # Contest: Codeforces Round 1014 (Div. 2)
 # Date: March 29, 2025
 # Author: Nishant Kumar
- 
+
 def solve():
     n = int(input())
     arr = list(map(int, input().split()))
@@ -16,13 +16,11 @@ def solve():
     if odd== 0 or odd==n:
         print(max(arr))
     else:
-        ans = sum_-odd
+        ans = sum_-odd+1
         print(ans)    
- 
- 
+
 if __name__ == "__main__":
     for _ in range(int(input())):
         solve()
 
 # Author: Nishant Kumar
-
