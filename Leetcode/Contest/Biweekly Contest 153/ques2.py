@@ -6,7 +6,7 @@ class Solution(object):
     def maxActiveSectionsAfterTrade(self, s):
         """
         :type s: str
-        :rtype: int
+        :r type: int
         """
         n = len(s)
         one = s.count('1')
