@@ -5,7 +5,7 @@ class Solution(object):
     def reverseDegree(self, s):
         """
         :type s: str
-        :rtype: int
+        :r type: int
         """
         ans = 0
         for i, char in enumerate(s, 1):  
