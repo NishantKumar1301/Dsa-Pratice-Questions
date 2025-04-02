@@ -18,3 +18,20 @@ class Solution(object):
             max_left= max(max_left,nums[i])
         return ans
 
+
+#####For smaller testcases 
+
+class Solution(object):
+    def maximumTripletValue(self, nums):
+        """
+        :type nums: List[int]
+        :r type: int
+        """
+        n =len(nums)
+        ans =0
+        for i in range(n-2):
+            for j in range(n-1):
+                for k in range(n):
+                    ans = max(ans,(nums[i]-nums[j])*nums[k])
+        return ans
+
