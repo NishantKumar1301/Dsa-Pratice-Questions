@@ -17,10 +17,6 @@ class Solution(object):
         return dp[ind][target]
 
     def canPartition(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
         n = len(nums)
         total = sum(nums)
         if total%2==1:
