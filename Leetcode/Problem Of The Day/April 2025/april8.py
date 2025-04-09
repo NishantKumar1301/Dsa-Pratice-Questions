@@ -3,16 +3,10 @@
 
 class Solution(object):
     def minimumOperations(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
         ans = 0
-        
         while len(nums) > len(set(nums)):
             nums = nums[3:]  
             ans += 1
-        
         return ans
         
 
