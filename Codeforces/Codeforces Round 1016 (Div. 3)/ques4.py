@@ -1,36 +1,33 @@
 #Question : Min Max MEX
 #Link to the question: https://codeforces.com/contest/2093/problem/E
 
-
-def solve(arr, n, k, mid):
-    s = set()
-    cnt = 0
-    if mid == 0:
-        return True
-    for i in range(n):
-        if arr[i] < mid:
-            s.add(arr[i])
-        if len(s) == mid:
-            cnt += 1
-            if cnt == k:
-                return True
-            s.clear()
-    return False
-
-for _ in range(int(input())):
+def solve():
     n, k = map(int, input().split())
-    arr = list(map(int, input().split()))
-    s = set(arr)
-    m = 0
-    while m in s:
-        m += 1
-    left, right = 0, m
+    a = list(map(int, input().split()))
+    lo, hi = 0, n
     ans = 0
-    while left <= right:
-        mid = left + (right - left) // 2
-        if not solve(arr, n, k, mid):
-            right = mid - 1
-        else:
+    while lo <= hi:
+        mid = (lo + hi) // 2
+        cnt = 0
+        cur = 0
+        vis = [False] * (mid + 1)
+        for i in range(n):
+            if a[i] < mid and not vis[a[i]]:
+                vis[a[i]] = True
+                cur += 1
+            if cur == mid:
+                cnt += 1
+                cur = 0
+                vis = [False] * (mid + 1)
+        if cnt >= k:
             ans = mid
-            left = mid + 1
+            lo = mid + 1
+        else:
+            hi = mid - 1
     print(ans)
+
+if __name__ == "__main__":
+    import sys
+    input = sys.stdin.readline
+    for _ in range(int(input())):
+        solve()
