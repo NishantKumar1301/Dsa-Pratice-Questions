@@ -61,5 +61,4 @@ class Solution(object):
 
 
 
-        ©leetcode
 
