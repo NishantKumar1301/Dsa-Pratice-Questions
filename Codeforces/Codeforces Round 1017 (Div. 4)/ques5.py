@@ -1,6 +1,5 @@
 #Question : Boneca Ambalabu
 #Link to the question: https://codeforces.com/contest/2094/problem/E
-
 # Contest: Codeforces Round 1017 (Div. 4)
 # Date: April 13, 2025
 # Author: Nishant Kumar
