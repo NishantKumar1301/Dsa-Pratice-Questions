@@ -18,5 +18,4 @@ class Solution(object):
                     if abs(arr[i]-arr[j])<=a and abs(arr[j]-arr[k])<=b and abs(arr[i]-arr[k])<=c:
                         ans+=1
         return ans
-        
 
