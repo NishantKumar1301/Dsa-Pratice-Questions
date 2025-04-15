@@ -5,6 +5,7 @@ class Tree:
     def __init__(self, size):
         self.tree = [0] * (size + 1)
 
+
     def update(self, index, delta):
         index += 1
         while index <= len(self.tree) - 1:
