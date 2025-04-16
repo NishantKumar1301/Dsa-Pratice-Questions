@@ -8,8 +8,8 @@ for _ in range(int(input())):
     if n<=k:
         print(0)
     else:
-        arr.sort()
         ans = 0
+        arr.sort()
         for i in range(n-k):
             ans+=(d-1)//arr[i]+ 1 
         print(ans)
