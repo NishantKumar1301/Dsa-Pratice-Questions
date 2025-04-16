@@ -13,6 +13,5 @@ for _ in range(int(input())):
             b+=1
         else:
             g+=1
-        
     print(b+g)
 
