@@ -3,7 +3,7 @@
 
 # cook your dish here
 def helper(x,y):
-    if x%2==0 or y%2==0:
+    if x % 2 == 0 or y % 2 == 0:
         return x+y 
     return x+y-1
 
