@@ -17,3 +17,5 @@ for _ in range(int(input())):
     x,y,z = map(int,input().split())
     ans = solve(x,y,z)
     print(ans)
+
+
