@@ -1,5 +1,5 @@
-#Question :
-#Link to the question: 
+#Question : Count the Number of Fair Pairs
+#Link to the question: https://leetcode.com/problems/count-the-number-of-fair-pairs/description/?envType=daily-question&envId=2025-04-19
 
 from bisect import bisect_left,bisect_right
 class Solution(object):
