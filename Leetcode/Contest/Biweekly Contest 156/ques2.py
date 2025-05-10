@@ -17,6 +17,5 @@ class Solution:
                 ans+= 1
         return ans
 
-
     def minOperations(self, nums):
         return self.solve(nums)
