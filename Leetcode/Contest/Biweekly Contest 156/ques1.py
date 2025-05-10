@@ -5,7 +5,7 @@ class Solution(object):
     def maxFreqSum(self, s):
         """
         :type s: str
-        :rtype: int
+        :returnType: int
         """
         mp = Counter(s)
         v =c= 0
