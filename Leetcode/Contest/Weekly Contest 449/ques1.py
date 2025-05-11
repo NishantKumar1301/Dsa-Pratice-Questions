@@ -11,8 +11,6 @@ class Solution(object):
         # s= set(s)
         # return len(s)-k
         freq = Counter(s)
-        if len(freq) <= k:
-            return 0
         freq = sorted(freq.values())
         ans = 0
         n = len(freq) - k
