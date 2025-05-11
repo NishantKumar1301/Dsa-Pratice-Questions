@@ -5,7 +5,7 @@ class Solution(object):
     def threeConsecutiveOdds(self, arr):
         """
         :type arr: List[int]
-        :rtype: bool
+        :returnType: bool
         """
         n = len(arr)
         cnt=0
