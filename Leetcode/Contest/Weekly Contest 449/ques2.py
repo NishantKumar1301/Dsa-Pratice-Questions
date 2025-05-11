@@ -5,7 +5,7 @@ class Solution(object):
     def canPartitionGrid(self, grid):
         """
         :type grid: List[List[int]]
-        :rtype: bool
+        :return type: bool
         """
         m, n = len(grid), len(grid[0])
         row_total, column_total = [], []
