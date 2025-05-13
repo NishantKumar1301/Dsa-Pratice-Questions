@@ -6,7 +6,7 @@ class Solution(object):
         """
         :type s: str
         :type t: int
-        :rtype: int
+        :return Type: int
         """
         freq = [0]*26
         for char in s:
