@@ -5,7 +5,7 @@ class Solution(object):
     def sortColors(self, nums):
         """
         :type nums: List[int]
-        :rtype: None Do not return anything, modify nums in-place instead.
+        :return Type: None Do not return anything, modify nums in-place instead.
         """
         n,zero,one = len(nums),0,0
         for num in nums:
