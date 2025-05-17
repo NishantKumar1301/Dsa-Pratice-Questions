@@ -8,8 +8,8 @@
 def solve():
     n = int(input())
     arr = list(map(int, input().split()))
-    sum_ = sum(arr)
-    if sum_ == n:
+    total = sum(arr)
+    if total == n:
         print("YES")
         return
     flag = False
