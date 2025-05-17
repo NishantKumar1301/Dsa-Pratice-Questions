@@ -1,3 +1,6 @@
+#Question : Slice to Survive
+#Link to the question: https://codeforces.com/contest/2109/problem/B
+
 # Contest: Codeforces Round 1025 (Div. 2)
 # Date: May 17, 2025
 # Author: Nishant Kumar
