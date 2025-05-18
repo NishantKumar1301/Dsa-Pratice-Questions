@@ -4,7 +4,6 @@
 from collections import  defaultdict
 import heapq
 from collections import defaultdict
-
 class Solution(object):
     def minMoves(self, grid):
         """
