@@ -7,7 +7,7 @@ class Solution(object):
     def maxSubstrings(self, word):
         """
         :type word: str
-        :rtype: int
+        :r type: int
         """
         n = len(word)
         freq = defaultdict(list)
