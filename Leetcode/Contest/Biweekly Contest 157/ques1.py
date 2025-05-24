@@ -20,6 +20,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
+
         prime,n = set(),len(s)
         for i in range(n):
             for j in range(i+1,n+1):
