@@ -6,7 +6,7 @@ class Solution(object):
     def longestPalindrome(self, words):
         """
         :type words: List[str]
-        :rtype: int
+        :r type: int
         """
         freq = defaultdict(int)
         ans = 0
