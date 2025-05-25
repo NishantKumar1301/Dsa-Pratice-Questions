@@ -4,10 +4,6 @@
 from collections import defaultdict
 class Solution(object):
     def longestPalindrome(self, words):
-        """
-        :type words: List[str]
-        :r type: int
-        """
         freq = defaultdict(int)
         ans = 0
         for word in words:
