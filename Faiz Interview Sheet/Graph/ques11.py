@@ -10,10 +10,10 @@ class Solution(object):
                 if (node!=-1 and not visited[node]): #Means that the node have not been visited so do dfs and update dist
                     dist[node]=dist[src]+1
                     self.dfs(node,adj,visited,pathVisited,dist,ans)
-                elif (node!=-1 and pathVisited[node]):#Cycle detected so upadate ans 
+                elif (node!=-1 and pathVisited[node]):#Cycle detected so update ans 
                     ans[0]= max(ans[0],dist[src]-dist[node]+1)
-
             pathVisited[src]=False
+
     def longestCycle(self, edges):
         """
         :type edges: List[int]
