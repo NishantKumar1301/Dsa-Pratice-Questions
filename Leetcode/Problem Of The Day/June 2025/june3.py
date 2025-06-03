@@ -8,7 +8,7 @@ class Solution(object):
         :type keys: List[List[int]]
         :type containedBoxes: List[List[int]]
         :type initialBoxes: List[int]
-        :rtype: int
+        :r type: int
         """
         seen = set()
         can_look = set()
