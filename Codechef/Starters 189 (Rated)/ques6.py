@@ -1,5 +1,5 @@
-# cook your dish here
 #Question : Sortable Subarrays (Easy)
+# cook your dish here
 #Link to the question: https://www.codechef.com/START189B/problems/SORTSUB7EZ
 for _ in range(int(input())):
     n = int(input())
