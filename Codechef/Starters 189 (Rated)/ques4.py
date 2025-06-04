@@ -1,6 +1,6 @@
-# cook your dish here
 #Question : Number Walks
 #Link to the question: https://www.codechef.com/START189B/problems/NUMBERWALK
+# cook your dish here
 import bisect
 MOD = 10**18
 for _ in range(int(input())):
