@@ -1,6 +1,6 @@
-# cook your dish here
 #Question : Distinct 2 Subarray
 #Link to the question: https://www.codechef.com/START189B/problems/DIS2SUB
+# cook your dish here
 for _ in range(int(input())):
     n = int(input())
     arr = list(map(int, input().split()))
