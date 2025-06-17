@@ -1,3 +1,6 @@
+#Question : Those Who Are With Us
+#Link to the question: https://codeforces.com/contest/2121/problem/C
+
 # Contest: Codeforces Round 1032 (Div. 3)
 # Date: June 17, 2025
 # Author: Nishant Kumar
