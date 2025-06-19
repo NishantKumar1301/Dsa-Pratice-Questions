@@ -18,6 +18,7 @@ class Solution(object):
                 if mat[i][j]==0:
                     queue.append((i,j,0)) #row,col,step
                     visited[i][j]=True
+
         while queue:
             row,col,time = queue.popleft()
             ans[row][col]=time
