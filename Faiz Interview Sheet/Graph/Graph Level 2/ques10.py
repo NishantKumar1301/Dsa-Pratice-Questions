@@ -2,6 +2,7 @@
 #Link to the question: https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/description/
 
 from heapq import heappush,heappop
+
 class Solution(object):
     def minCost(self, grid):
         """
