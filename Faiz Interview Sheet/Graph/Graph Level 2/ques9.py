@@ -1,7 +1,9 @@
 #Question : Number of Ways to Arrive at Destination
 #Link to the question: https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/
+
 MOD = 10**9+7
 from heapq import heappush ,heappop
+
 class Solution:
     def countPaths(self, n, roads):
         adj =[[] for _ in range(n)]
