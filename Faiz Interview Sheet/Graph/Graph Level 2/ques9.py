@@ -27,4 +27,5 @@ class Solution:
                 #Case 2 : The nbr is visited by another route at the same minimum dsitance
                 elif dis+edgeWeight == dist[ngbr]:
                     ways[ngbr]=(ways[ngbr]+ways[node] ) %MOD
+
         return ways[n-1] % MOD
