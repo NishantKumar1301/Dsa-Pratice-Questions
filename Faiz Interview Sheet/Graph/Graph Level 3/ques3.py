@@ -25,7 +25,7 @@ class Solution(object):
             chan = ord(changed[i])-ord('a')
             dist[org][chan]= min(dist[org][chan],cost[i])
         
-        #Flyod warshal algorithm
+        #Floyd Warshall algorithm
         for k in range(26):
             for i in range(26):
                 for j in range(26):
@@ -37,7 +37,7 @@ class Solution(object):
         for i in range(len(source)):
             s = ord(source[i])-ord('a')
             t = ord(target[i])-ord('a')
-            if dist[s][t]==MAXI: #Indicates we cannt convert source to destination
+            if dist[s][t]==MAXI: #Indicates we cannot convert source to destination
                 return -1
             ans += dist[s][t]
         
