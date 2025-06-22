@@ -32,5 +32,4 @@ class Solution:
             if self.findParent(u,parent)!=self.findParent(v,parent):
                 total+=w
                 self.union(u,v,parent,size)
-        
         return total
