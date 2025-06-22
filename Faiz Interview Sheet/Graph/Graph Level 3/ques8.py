@@ -5,6 +5,7 @@
 from typing import List
 
 class Solution:
+
     def findParent(self,u,parent):
         if parent[u]!=u:
             parent[u]=self.findParent(parent[u],parent)
