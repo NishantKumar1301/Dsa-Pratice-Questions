@@ -25,6 +25,7 @@ class Solution:
                     heappush(pq,(edgeWt,adjNode,node))
         
         #If we have to print the mst
-        # for u,v in mst:
-        #     print(u,v)
+        for u,v in mst:
+            print(u,v)
+
         return total
