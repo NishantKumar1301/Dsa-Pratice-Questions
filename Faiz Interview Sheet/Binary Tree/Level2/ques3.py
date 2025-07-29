@@ -16,18 +16,18 @@ class Solution(object):
         """
 
         # Method 1 : Time complexity = O(n)
-        # if not root:
-        #     return 0
-        # ans = 0
-        # queue = deque([root])
-        # while queue:
-        #     curr= queue.popleft()
-        #     ans+=1
-        #     if curr.left:
-        #         queue.append(curr.left)
-        #     if curr.right:
-        #         queue.append(curr.right)
-        # return ans
+        if not root:
+            return 0
+        ans = 0
+        queue = deque([root])
+        while queue:
+            curr= queue.popleft()
+            ans+=1
+            if curr.left:
+                queue.append(curr.left)
+            if curr.right:
+                queue.append(curr.right)
+        return ans
         
         #Method 2 : 
 
