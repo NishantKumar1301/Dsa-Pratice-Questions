@@ -66,7 +66,6 @@ class LFUCache(object):
 		   two rules:
            Rule 1: Whenever we see the size of the DLinkedList of current min frequency is 0,
                    the min frequency must increment by 1.
-           
            Rule 2: Whenever put in a new (key, value), the min frequency must 1 (the new node)
         """
         self.capacity = capacity
@@ -91,8 +90,8 @@ class LFUCache(object):
         
             1. pop the node from the old DLinkedList (with freq `f`)
             2. append the node to new DLinkedList (with freq `f+1`)
-            3. if old DlinkedList has size 0 and self._minfreq is `f`,
-               update self._minfreq to `f+1`
+            3. if old DlinkedList has size 0 and self.minfreq is `f`,
+               update self.minfreq to `f+1`
         """
         freq = node.freq
         dll = self.freqMap[freq]
