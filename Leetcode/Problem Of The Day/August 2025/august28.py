@@ -1,0 +1,20 @@
+#Question : Sort Matrix by Diagonals
+#Link to the question: https://leetcode.com/problems/sort-matrix-by-diagonals/
+class Solution(object):
+    def sortMatrix(self, grid):
+        """
+        :type grid: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        n = len(grid)
+        for i in range(n):
+            tmp = [grid[i + j][j] for j in range(n - i)]
+            tmp.sort(reverse=True)
+            for j in range(n - i):
+                grid[i + j][j] = tmp[j]
+        for j in range(1, n):
+            tmp = [grid[i][j + i] for i in range(n - j)]
+            tmp.sort()
+            for i in range(n - j):
+                grid[i][j + i] = tmp[i]
+        return grid
