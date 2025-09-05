@@ -8,10 +8,8 @@ class Solution(object):
         :rtype: int
         """
         operations = 1
-
         while num1 - (operations * num2) >= operations:
             if bin(num1 - (operations * num2)).count('1') <= operations:
                 return operations
             operations += 1
-
         return -1
