@@ -1,6 +1,5 @@
 #Question : Find the Minimum Amount of Time to Brew Potions
 #Link to the question: https://leetcode.com/problems/find-the-minimum-amount-of-time-to-brew-potions
-
 class Solution(object):
     def minTime(self, skill, mana):
         """
