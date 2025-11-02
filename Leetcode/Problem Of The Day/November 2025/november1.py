@@ -2,10 +2,10 @@
 #Link to the question: https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/
 
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode(object):
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 class Solution(object):
     def modifiedList(self, nums, head):
         """
